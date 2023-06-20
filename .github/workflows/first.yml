@@ -10,4 +10,9 @@ jobs:
         run: echo " Hello World"
       - name: Checkout
         uses: actions/checkout@v3.5.3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+      - run: pip install Flask
       - run: python test.py
+      
