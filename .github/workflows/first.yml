@@ -4,6 +4,6 @@ on: [push]
 
 jobs:
   say-hello:
-    rns-on: ubuntu
+    runs-on: ubuntu
     steps:
       - run: echo " Hello World"
